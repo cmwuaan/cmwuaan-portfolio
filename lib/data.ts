@@ -15,7 +15,7 @@ export const links = [
   { name: 'Skills', link: '#skill' },
   { name: 'Honors & awards', link: '#honor' },
   { name: 'Activities', link: '#activity' },
-  { name: 'Contacts', link: '#contact' },
+  { name: 'Contact', link: '#contact' },
 ] as const;
 
 export const projectsData = [
@@ -73,7 +73,7 @@ export const activitiesData = [
   {
     from: '10/2022',
     to: '07/2023',
-    role: 'Member of Development Function',
+    role: 'Front-End Developer',
     organization: 'Google Developer Student Clubs - UIT',
   },
   { from: '08/2023', to: 'present', role: 'Chapter Lead', organization: 'Google Developer Student Clubs - UIT' },
