@@ -5,12 +5,77 @@ import Link from 'next/link';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 import { links } from '@/lib/data';
 import { IoMenu } from 'react-icons/io5';
+import { IoClose } from 'react-icons/io5';
 
 const lgSize = 1150;
+
+interface NavbarFixedProps {
+  toggleMenu: Function;
+}
 
 export default function Header() {
   const [isScrolling, setIsScrolling] = useState(false);
   const [widthDevice, setWidthDevice] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+
+  // Navbar Controller for Mobile Device
+  const [open, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
+  const menuVars = {
+    initial: {
+      scaleY: 0,
+    },
+    animate: {
+      scaleY: 1,
+      transition: {
+        duration: 0.5,
+        ease: [0.12, 0, 0.39, 0],
+      },
+    },
+    exit: {
+      scaleY: 0,
+      transition: {
+        delay: 0.5,
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+  };
+
+  const mobileLinkVars = {
+    initial: {
+      y: '30vh',
+      transition: {
+        duration: 0.5,
+        ease: [0.37, 0, 0.63, 1],
+      },
+    },
+    open: {
+      y: 0,
+      transition: {
+        duration: 0.7,
+        ease: [0, 0.55, 0.45, 1],
+      },
+    },
+  };
+
+  const containerVars = {
+    initial: {
+      transition: {
+        staggerChildren: 0.09,
+        staggerDirection: -1,
+      },
+    },
+    open: {
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.09,
+        staggerDirection: 1,
+      },
+    },
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,13 +100,56 @@ export default function Header() {
   return (
     <>
       <AnimatePresence>
-        <header className="z-[10]">{isScrolling && widthDevice > lgSize ? <NavbarScroll /> : <NavbarFixed />}</header>
+        <header className="z-[10]">
+          {isScrolling && widthDevice > lgSize ? <NavbarScroll /> : <NavbarFixed toggleMenu={toggleMenu} />}
+
+          <AnimatePresence>
+            {open && (
+              <motion.div
+                variants={menuVars}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="fixed left-0 top-0 w-full h-screen bg-black backdrop-blur-[0.5rem] bg-opacity-10 text-gray-300 p-10 origin-top"
+              >
+                <div className="flex h-full flex-col">
+                  <div className="flex justify-between">
+                    <h1 className="text-lg text-gray-300 font-semibold">cmwuaan</h1>
+                    <div onClick={() => toggleMenu()} className="cursor-pointer text-2xl">
+                      <IoClose />
+                    </div>
+                  </div>
+                  <motion.div
+                    variants={containerVars}
+                    initial="initial"
+                    animate="open"
+                    exit="initial"
+                    className="flex flex-col h-full justify-center items-center gap-4"
+                  >
+                    {links.map((link, index) => {
+                      return (
+                        <div className="overflow-hidden" key={index}>
+                          <motion.div
+                            variants={mobileLinkVars}
+                            className="text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400 lowercase"
+                          >
+                            <Link href={link.hash}>{'.' + link.name}</Link>
+                          </motion.div>
+                        </div>
+                      );
+                    })}
+                  </motion.div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </header>
       </AnimatePresence>
     </>
   );
 }
 
-function NavbarFixed() {
+function NavbarFixed({ toggleMenu }: NavbarFixedProps) {
   return (
     <nav
       className="md:px-24 px-4 flex justify-between items-center fixed bg-white w-full h-[4rem] rounded-non top-0
@@ -67,7 +175,12 @@ function NavbarFixed() {
         Hire me
         <MdOutlineArrowOutward />
       </button>
-      <div className="lg:hidden text-2xl text-gray-300">
+      <div
+        onClick={() => {
+          toggleMenu();
+        }}
+        className="cursor-pointer lg:hidden text-2xl text-gray-300"
+      >
         <IoMenu />
       </div>
     </nav>
