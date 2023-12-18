@@ -1,5 +1,5 @@
-import EcoSyncProject from '@/public/images/EcoSyncCover.png';
-import eGreenBinProject from '@/public/images/eGreenBinCover.png';
+import EcoSyncProject from '@/public/images/EcoSyncCover.jpg';
+import eGreenBinProject from '@/public/images/eGreenBinCover.jpg';
 import CookhubProject from '@/public/images/CookhubCover.png';
 import SolutionChallenge from '@/public/images/SolutionChallenge.jpg';
 import Hackathon from '@/public/images/Hackathon.jpg';
@@ -9,13 +9,11 @@ import CookhubLogo from '@/public/logos/CookhubLogo.png';
 import AboutCover from '@/public/images/CMQCover.jpg';
 
 export const links = [
-  { name: 'Home', link: '#home' },
-  { name: 'About', link: '#about' },
-  { name: 'Projects', link: '#project' },
-  { name: 'Skills', link: '#skill' },
-  { name: 'Honors & awards', link: '#honor' },
-  { name: 'Activities', link: '#activity' },
-  { name: 'Contact', link: '#contact' },
+  { name: 'Home', hash: '#home' },
+  { name: 'About', hash: '#about' },
+  { name: 'Projects', hash: '#project' },
+  { name: 'More', hash: '#more' },
+  { name: 'Contact', hash: '#contact' },
 ] as const;
 
 export const projectsData = [
