@@ -1,4 +1,5 @@
 import Hero from '@/components/hero';
+import Intro from '@/components/intro';
 import About from './about/page';
 import Journey from '@/components/journey';
 import Projects from '@/components/projects';
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main className="mt-32 mx-[10%] md:mx-12 lg:mx-20 flex flex-col gap-20">
       <Hero />
+      <Intro />
       {/* <Journey />
       <About />
       <Projects />
