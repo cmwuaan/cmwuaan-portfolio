@@ -6,7 +6,6 @@ import Hackathon from '@/public/images/Hackathon.jpg';
 import EcoSyncLogo from '@/public/logos/EcoSyncLogo.png';
 import eGreenBinLogo from '@/public/logos/eGreenBinLogo.png';
 import CookhubLogo from '@/public/logos/CookhubLogo.png';
-import AboutCover from '@/public/images/CMQCover.jpg';
 
 export const links = [
   { name: 'Home', hash: '#home' },
