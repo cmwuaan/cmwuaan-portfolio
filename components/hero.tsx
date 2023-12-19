@@ -1,11 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 import HeroProfile from '@/public/images/CMQHome.png';
+import { jsPDF } from 'jspdf';
+// import CV from '../public/files/CV_Cao_Minh_Quan_Software_Engineer_Intern.pdf';
 
 // Import Icons
 import { FaArrowDown } from 'react-icons/fa';
 
 export default function Hero() {
+  const fileName = 'CV_Cao_Minh_Quan_Software_Engineer_Intern';
+  const handleDownload = () => {
+    // let doc = new jsPDF();
+    // doc.save(CV);
+  };
   return (
     <section className="flex flex-col items-center gap-6 md:flex-row sm:justify-around">
       <div className="flex flex-col items-center md:items-start text-center md:text-left sm:w-[20rem] lg:w-[26rem]">
