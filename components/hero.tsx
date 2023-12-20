@@ -23,19 +23,21 @@ export default function Hero() {
           I design and code beautiful simple things, and I love what I do.
         </p>
         <div className="flex gap-4 mt-4 sm:mt-10 w-full justify-center">
-          <button className="flex items-center justify-center w-32 h-8 bg-white rounded-md text-black font-medium p-1 text-sm">
+          <button className="flex items-center justify-center w-32 h-8 bg-white rounded-md text-black font-medium p-1 text-sm transition duration-300 ease-in-out hover:bg-gray-200">
             Download CV <FaArrowDown />
           </button>
-          <button className="flex items-center justify-center w-32 h-[2.2rem] bg-white border border-white border-opacity-20 bg-opacity-10 shadow-lg shadow-white/[0.03] rounded-md text-white font-medium p-1 text-sm">
+          <button className="flex items-center justify-center w-32 h-[2.2rem] bg-white border border-white border-opacity-20 bg-opacity-10 shadow-lg shadow-white/[0.03] rounded-md text-white font-medium p-1 text-sm transition duration-300 ease-in-out hover:bg-opacity-[0.15]">
             Explore more
           </button>
         </div>
       </div>
 
-      <div className="relative w-[18rem] h-[24rem] md:h-[24rem] lg:w-[24rem] lg:h-[30rem] bg-white border border-white border-opacity-20 bg-opacity-10 shadow-lg shadow-white/[0.03] rounded-md z-[-1]">
-        <div className="absolute translate-y-[3.3rem] md:translate-y-[3.3rem] lg:translate-y-[2.4rem]">
-          <Image src={HeroProfile} alt="About cover"></Image>
-        </div>
+      <div className="overflow-hidden w-[18rem] h-[24rem] md:h-[24rem] lg:w-[24rem] lg:h-[30rem] bg-white border border-white border-opacity-20 bg-opacity-10 shadow-lg shadow-white/[0.03] rounded-md z-[-1] ">
+        <Image
+          src={HeroProfile}
+          alt="About cover"
+          className="object-cover translate-y-[3.3rem] md:translate-y-[3.3rem] lg:translate-y-[2.4rem]"
+        ></Image>
       </div>
     </section>
   );

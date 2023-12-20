@@ -6,6 +6,8 @@ import Hackathon from '@/public/images/Hackathon.jpg';
 import EcoSyncLogo from '@/public/logos/EcoSyncLogo.png';
 import eGreenBinLogo from '@/public/logos/eGreenBinLogo.png';
 import CookhubLogo from '@/public/logos/CookhubLogo.png';
+import CMQLogo from '@/public/logos/CMQLogo.png';
+import CMQProject from '@/public/images/CMQCover.png';
 
 import Arduino from '@/public/images/tech/Arduino.png';
 import NextJS from '@/public/images/tech/NextJS.png';
@@ -24,6 +26,8 @@ import ReactJS from '@/public/images/tech/ReactJS.png';
 import Typescript from '@/public/images/tech/Typescript.png';
 import HTML from '@/public/images/tech/HTML.png';
 import MySQL from '@/public/images/tech/MySQL.png';
+import Tailwind from '@/public/images/tech/Tailwind.png';
+import Figma from '@/public/images/tech/Figma.png';
 
 import WebItem from '@/public/images/WebItem.svg';
 import MobileItem from '@/public/images/MobileItem.svg';
@@ -40,13 +44,22 @@ export const links = [
 
 export const projectsData = [
   {
-    title: 'EcoSync',
+    title: 'Portfolio',
     source: 'https://github.com/cmwuaan',
     description:
-      'A project that embraces a greener tomorrow with tech-driven waste management, revolutionizing the path to sustainability.',
-    logoUrl: EcoSyncLogo,
-    coverUrl: EcoSyncProject,
-    techTags: ['Arduino', 'NextJS', 'NodeJS', 'MongoDB'],
+      "My personal landing page. Explore my portfolio for software projects. Let's connect and bring ideas to life! Have fun <3",
+    logoUrl: CMQLogo,
+    coverUrl: CMQProject,
+    techTags: ['HTML', 'CSS', 'Typescript', 'Tailwind', 'NextJS', 'Figma'],
+  },
+  {
+    title: 'Cookhub',
+    source: 'https://github.com/cmwuaan',
+    description:
+      'The social app for food enthusiasts. Connect, discover, and share delicious recipes with a community that celebrates the joy of cooking!',
+    logoUrl: CookhubLogo,
+    coverUrl: CookhubProject,
+    techTags: ['Flutter', 'Firebase'],
   },
   {
     title: 'eGreenBin',
@@ -58,13 +71,13 @@ export const projectsData = [
     techTags: ['Flutter', 'SocketIO', 'Arduino'],
   },
   {
-    title: 'Cookhub',
+    title: 'EcoSync',
     source: 'https://github.com/cmwuaan',
     description:
-      'The social app for food enthusiasts. Connect, discover, and share delicious recipes with a community that celebrates the joy of cooking!',
-    logoUrl: CookhubLogo,
-    coverUrl: CookhubProject,
-    techTags: ['Flutter', 'Firebase', 'Golang'],
+      'A project that embraces a greener tomorrow with tech-driven waste management, revolutionizing the path to sustainability.',
+    logoUrl: EcoSyncLogo,
+    coverUrl: EcoSyncProject,
+    techTags: ['HTML', 'CSS', 'Javascript', 'SocketIO', 'NextJS', 'NodeJS', 'MongoDB', 'Firebase', 'Arduino'],
   },
 ] as const;
 
@@ -90,13 +103,17 @@ export const skillsData: SkillData[] = [
 
 export const honorsData = [
   {
-    imageUrl: SolutionChallenge,
+    imageUrl: Hackathon,
+    source:
+      'https://tuyensinh.uit.edu.vn/nhom-sv-uit-co-du-cong-nghe-xuat-sac-nhat-tai-google-developer-student-clubs-gdsc-hackathon-vietnam-nam-2023',
     title: 'Top 1 nationally GDSC Hackathon Vietnam 2023',
     description:
       "The mission of the Solution Challenge is to solve for one or more of the United Nations' 17 Sustainable Development Goals using Google technology.",
   },
   {
-    imageUrl: Hackathon,
+    imageUrl: SolutionChallenge,
+    source:
+      'https://www.uit.edu.vn/chuc-mung-egreenbin-va-sowaste-2-nhom-sinh-vien-uit-lot-top-100-solution-challenge-2023',
     title: 'Top 100 globally Google Solution Challenge 2023',
     description:
       'GDSC Hackathon Viet Nam 2023: UN goals-focused programming competition by Google Developer Student Clubs and CoderSchool in Ho Chi Minh City. Open to teams of up to four students nationwide',
@@ -132,4 +149,6 @@ export const imageTechTags = [
   { name: 'Typescript', imageUrl: Typescript },
   { name: 'HTML', imageUrl: HTML },
   { name: 'MySQL', imageUrl: MySQL },
+  { name: 'Tailwind', imageUrl: Tailwind },
+  { name: 'Figma', imageUrl: Figma },
 ] as const;

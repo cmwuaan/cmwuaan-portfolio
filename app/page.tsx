@@ -19,9 +19,9 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
-      {/* <Honors />
-      <Activities />
-      <Contact /> */}
+      <Honors />
+      {/* <Activities /> */}
+      <Contact />
     </main>
   );
 }
