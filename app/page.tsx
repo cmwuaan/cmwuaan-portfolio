@@ -1,11 +1,11 @@
 import Hero from '@/components/hero';
-import Intro from '@/components/intro';
 import About from '@/components/about';
 import Journey from '@/components/journey';
 import Projects from '@/components/projects';
 import Skills from '@/components/skills';
 import Honors from '@/components/honors';
 import Activities from '@/components/activities';
+import Intro from '@/components/intro';
 import Contact from '@/components/contact';
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
       <Intro />
       {/* <Journey /> */}
       <About />
-      {/* <Projects />
-      <Skills />
+      <Projects />
+      {/* <Skills />
       <Honors />
       <Activities />
       <Contact /> */}
