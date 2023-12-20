@@ -1,0 +1,96 @@
+<svg width="354" height="344" viewBox="0 0 354 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_219_282)">
+<rect x="111" y="104" width="136" height="136" rx="14" fill="url(#paint0_linear_219_282)" fill-opacity="0.16" shape-rendering="crispEdges"/>
+<rect x="110.6" y="103.6" width="136.8" height="136.8" rx="14.4" stroke="white" stroke-opacity="0.4" stroke-width="0.8" shape-rendering="crispEdges"/>
+</g>
+<g filter="url(#filter1_d_219_282)">
+<rect x="130" y="123" width="97" height="97" rx="6" fill="url(#paint1_linear_219_282)" fill-opacity="0.16" shape-rendering="crispEdges"/>
+<rect x="129.6" y="122.6" width="97.8" height="97.8" rx="6.4" stroke="white" stroke-opacity="0.4" stroke-width="0.8" shape-rendering="crispEdges"/>
+</g>
+<path d="M129 241V257L104.5 278.5V290.5" stroke="#676767" stroke-width="2"/>
+<path d="M142.5 240.5V280.5L122.5 299.5V315" stroke="#676767" stroke-width="2"/>
+<path d="M159.5 240.5V296.5L139.5 314V333" stroke="#676767" stroke-width="2"/>
+<path d="M175 240.5V325" stroke="#676767" stroke-width="2"/>
+<path d="M192 240.5V298.5" stroke="#676767" stroke-width="2"/>
+<path d="M206 241V291L225.5 308" stroke="#676767" stroke-width="2"/>
+<path d="M220.5 240.5V264L257.5 295V311" stroke="#676767" stroke-width="2"/>
+<path d="M110.5 220.5H87.5L66.5 244.5H54" stroke="#676767" stroke-width="2"/>
+<path d="M110 207H64L45.5 227H31.5" stroke="#676767" stroke-width="2"/>
+<path d="M110.5 190H49L32 208.5H13" stroke="#676767" stroke-width="2"/>
+<path d="M110.5 174.5H21.5" stroke="#676767" stroke-width="2"/>
+<path d="M110.5 158H48" stroke="#676767" stroke-width="2"/>
+<path d="M110 143.5H55.5L37.5 125" stroke="#676767" stroke-width="2"/>
+<path d="M110.5 128.5H81L51 92H34" stroke="#676767" stroke-width="2"/>
+<path d="M131.5 104V75L94 44.5V27.5" stroke="#676767" stroke-width="2"/>
+<path d="M146.5 104V48.5L126.5 32" stroke="#676767" stroke-width="2"/>
+<path d="M160.5 103.5V41" stroke="#676767" stroke-width="2"/>
+<path d="M177.5 104V16.5" stroke="#676767" stroke-width="2"/>
+<path d="M193 104V46.5L212.5 29V11" stroke="#676767" stroke-width="2"/>
+<path d="M210 103V58.5L231 39V25.5" stroke="#676767" stroke-width="2"/>
+<path d="M247.5 207.5H290L307.5 227.5H322.5" stroke="#676767" stroke-width="2"/>
+<path d="M247.5 189.5H305L321.5 209H341" stroke="#676767" stroke-width="2"/>
+<path d="M248 175H332" stroke="#676767" stroke-width="2"/>
+<path d="M247.5 158.5H307" stroke="#676767" stroke-width="2"/>
+<path d="M247.5 144H298.5L316 124.5" stroke="#676767" stroke-width="2"/>
+<path d="M247 129.5H270.5L303 91.5H318" stroke="#676767" stroke-width="2"/>
+<path d="M224 103.5V81L248 60V49" stroke="#676767" stroke-width="2"/>
+<path d="M247.5 220.5H266L287 245H298" stroke="#676767" stroke-width="2"/>
+<path d="M330 91C330 94.866 326.866 98 323 98C319.134 98 316 94.866 316 91C316 87.134 319.134 84 323 84C326.866 84 330 87.134 330 91Z" fill="#676767"/>
+<circle cx="320" cy="122" r="7" fill="#676767"/>
+<circle cx="313" cy="158" r="7" fill="#676767"/>
+<circle cx="337" cy="175" r="7" fill="#676767"/>
+<circle cx="347" cy="209" r="7" fill="#676767"/>
+<circle cx="329" cy="227" r="7" fill="#676767"/>
+<circle cx="305" cy="245" r="7" fill="#676767"/>
+<circle cx="256" cy="315" r="7" fill="#676767"/>
+<circle cx="231" cy="309" r="7" fill="#676767"/>
+<circle cx="191" cy="302" r="7" fill="#676767"/>
+<circle cx="175" cy="328" r="7" fill="#676767"/>
+<circle cx="123" cy="318" r="7" fill="#676767"/>
+<circle cx="105" cy="293" r="7" fill="#676767"/>
+<circle cx="49" cy="245" r="7" fill="#676767"/>
+<circle cx="26" cy="227" r="7" fill="#676767"/>
+<circle cx="7" cy="208" r="7" fill="#676767"/>
+<circle cx="16" cy="174" r="7" fill="#676767"/>
+<circle cx="42" cy="158" r="7" fill="#676767"/>
+<circle cx="35" cy="120" r="7" fill="#676767"/>
+<circle cx="29" cy="91" r="7" fill="#676767"/>
+<circle cx="95" cy="22" r="7" fill="#676767"/>
+<circle cx="121" cy="30" r="7" fill="#676767"/>
+<circle cx="161" cy="36" r="7" fill="#676767"/>
+<circle cx="178" cy="11" r="7" fill="#676767"/>
+<circle cx="213" cy="7" r="7" fill="#676767"/>
+<circle cx="231" cy="20" r="7" fill="#676767"/>
+<circle cx="249" cy="44" r="7" fill="#676767"/>
+<circle cx="138" cy="337" r="7" fill="#676767"/>
+<defs>
+<filter id="filter0_d_219_282" x="106.2" y="103.2" width="145.6" height="145.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_219_282"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_219_282" result="shape"/>
+</filter>
+<filter id="filter1_d_219_282" x="125.2" y="122.2" width="106.6" height="106.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_219_282"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_219_282" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_219_282" x1="115.121" y1="104" x2="295.218" y2="287.6" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_219_282" x1="132.939" y1="123" x2="261.391" y2="253.95" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
