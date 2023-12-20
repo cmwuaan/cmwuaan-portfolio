@@ -6,7 +6,7 @@ import Skills from '@/components/skills';
 import Honors from '@/components/honors';
 import Activities from '@/components/activities';
 import Intro from '@/components/intro';
-import Contact from './contact/page';
+import Contact from '@/components/contact';
 
 export default function Home() {
   return (
