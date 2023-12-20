@@ -18,8 +18,8 @@ export default function Home() {
       {/* <Journey /> */}
       <About />
       <Projects />
-      {/* <Skills />
-      <Honors />
+      <Skills />
+      {/* <Honors />
       <Activities />
       <Contact /> */}
     </main>
