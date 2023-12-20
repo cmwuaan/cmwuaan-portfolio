@@ -15,6 +15,20 @@ import Flutter from '@/public/images/tech/Flutter.png';
 import SocketIO from '@/public/images/tech/SocketIO.png';
 import Firebase from '@/public/images/tech/Firebase.png';
 import Golang from '@/public/images/tech/Golang.png';
+import Android from '@/public/images/tech/Android.png';
+import CSS from '@/public/images/tech/CSS.png';
+import Docker from '@/public/images/tech/Docker.png';
+import GCP from '@/public/images/tech/GCP.png';
+import Javascript from '@/public/images/tech/Javascript.png';
+import ReactJS from '@/public/images/tech/ReactJS.png';
+import Typescript from '@/public/images/tech/Typescript.png';
+import HTML from '@/public/images/tech/HTML.png';
+import MySQL from '@/public/images/tech/MySQL.png';
+
+import WebItem from '@/public/images/WebItem.svg';
+import MobileItem from '@/public/images/MobileItem.svg';
+import DatabaseItem from '@/public/images/DatabaseItem.svg';
+import CPUItem from '@/public/images/CPUItem.svg';
 
 export const links = [
   { name: 'Home', hash: '/' },
@@ -54,12 +68,24 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  { role: 'Web', techTags: ['HTML', 'CSS', 'Javascript', 'Typescript', 'NodeJS', 'NextJS', 'ReactJS', 'SocketIO'] },
-  { role: 'Mobile', techTags: ['Flutter', 'Android'] },
-  { role: 'Databases', techTags: ['MySQL', 'Firebase', 'MongoDB'] },
-  { role: 'Embedded System', techTags: ['Arduino'] },
-  { role: 'DevOps', techTags: ['Docker', 'GCP'] },
+type SkillData = {
+  role: string;
+  imageRole: string;
+  drawComponent: React.ComponentType<any> | null; // Define the drawComponent property
+  techTags: string[];
+};
+
+export const skillsData: SkillData[] = [
+  {
+    role: 'Web',
+    imageRole: WebItem,
+    drawComponent: null,
+    techTags: ['HTML', 'CSS', 'Javascript', 'Typescript', 'NodeJS', 'NextJS', 'ReactJS', 'SocketIO'],
+  },
+  { role: 'Mobile', imageRole: MobileItem, drawComponent: null, techTags: ['Flutter', 'Android'] },
+  { role: 'Databases', imageRole: DatabaseItem, drawComponent: null, techTags: ['MySQL', 'Firebase', 'MongoDB'] },
+  { role: 'Embedded System', imageRole: CPUItem, drawComponent: null, techTags: ['Arduino'] },
+  // { role: 'DevOps', imageRole: '', drawComponent: null, techTags: ['Docker', 'GCP'] },
 ] as const;
 
 export const honorsData = [
@@ -97,4 +123,13 @@ export const imageTechTags = [
   { name: 'SocketIO', imageUrl: SocketIO },
   { name: 'Firebase', imageUrl: Firebase },
   { name: 'Golang', imageUrl: Golang },
+  { name: 'Android', imageUrl: Android },
+  { name: 'CSS', imageUrl: CSS },
+  { name: 'Docker', imageUrl: Docker },
+  { name: 'GCP', imageUrl: GCP },
+  { name: 'Javascript', imageUrl: Javascript },
+  { name: 'ReactJS', imageUrl: ReactJS },
+  { name: 'Typescript', imageUrl: Typescript },
+  { name: 'HTML', imageUrl: HTML },
+  { name: 'MySQL', imageUrl: MySQL },
 ] as const;
