@@ -133,7 +133,9 @@ export default function Header() {
                             variants={mobileLinkVars}
                             className=" font-medium text-5xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400 lowercase"
                           >
-                            <Link href={link.hash}>{'.' + link.name}</Link>
+                            <Link onClick={() => toggleMenu()} href={link.hash}>
+                              {'.' + link.name}
+                            </Link>
                           </motion.div>
                         </div>
                       );

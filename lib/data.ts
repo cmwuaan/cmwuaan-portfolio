@@ -8,7 +8,7 @@ import eGreenBinLogo from '@/public/logos/eGreenBinLogo.png';
 import CookhubLogo from '@/public/logos/CookhubLogo.png';
 
 export const links = [
-  { name: 'Home', hash: '#home' },
+  { name: 'Home', hash: '/' },
   { name: 'About', hash: '#about' },
   { name: 'Projects', hash: '#project' },
   { name: 'More', hash: '#more' },

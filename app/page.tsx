@@ -7,10 +7,12 @@ import Honors from '@/components/honors';
 import Activities from '@/components/activities';
 import Intro from '@/components/intro';
 import Contact from '@/components/contact';
+import Spacer from '@/components/spacer';
 
 export default function Home() {
   return (
-    <main className="mt-32 mx-[10%] md:mx-12 lg:mx-20 flex flex-col gap-20">
+    <main className="mx-[10%] md:mx-12 lg:mx-20 flex flex-col gap-20">
+      <Spacer />
       <Hero />
       <Intro />
       {/* <Journey /> */}

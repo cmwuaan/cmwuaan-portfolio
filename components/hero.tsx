@@ -14,7 +14,7 @@ export default function Hero() {
     // doc.save(CV);
   };
   return (
-    <section className="flex flex-col items-center gap-6 md:flex-row sm:justify-around">
+    <section className="flex flex-col items-center gap-6 md:flex-row sm:justify-around snap-end md:snap-center">
       <div className="flex flex-col items-center md:items-start text-center md:text-left sm:w-[20rem] lg:w-[26rem]">
         <h1 className="text-6xl sm:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400">
           Quan Cao&apos;s Portfolio
