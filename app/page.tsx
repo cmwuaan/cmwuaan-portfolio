@@ -1,5 +1,5 @@
 import Hero from '@/components/hero';
-import About from './about/page';
+import About from '@/components/about';
 import Journey from '@/components/journey';
 import Projects from '@/components/projects';
 import Skills from '@/components/skills';
@@ -13,10 +13,10 @@ export default function Home() {
     <main className="mt-32 mx-[10%] md:mx-12 lg:mx-20 flex flex-col gap-20">
       <Hero />
       <Intro />
-      {/* <Journey />
+      {/* <Journey /> */}
       <About />
       <Projects />
-      <Skills />
+      {/* <Skills />
       <Honors />
       <Activities />
       <Contact /> */}
