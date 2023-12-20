@@ -7,6 +7,15 @@ import EcoSyncLogo from '@/public/logos/EcoSyncLogo.png';
 import eGreenBinLogo from '@/public/logos/eGreenBinLogo.png';
 import CookhubLogo from '@/public/logos/CookhubLogo.png';
 
+import Arduino from '@/public/images/tech/Arduino.png';
+import NextJS from '@/public/images/tech/NextJS.png';
+import NodeJS from '@/public/images/tech/NodeJS.png';
+import MongoDB from '@/public/images/tech/MongoDB.png';
+import Flutter from '@/public/images/tech/Flutter.png';
+import SocketIO from '@/public/images/tech/SocketIO.png';
+import Firebase from '@/public/images/tech/Firebase.png';
+import Golang from '@/public/images/tech/Golang.png';
+
 export const links = [
   { name: 'Home', hash: '/' },
   { name: 'About', hash: '#about' },
@@ -18,6 +27,7 @@ export const links = [
 export const projectsData = [
   {
     title: 'EcoSync',
+    source: 'https://github.com/cmwuaan',
     description:
       'A project that embraces a greener tomorrow with tech-driven waste management, revolutionizing the path to sustainability.',
     logoUrl: EcoSyncLogo,
@@ -26,14 +36,16 @@ export const projectsData = [
   },
   {
     title: 'eGreenBin',
+    source: 'https://github.com/GDSC-UIT/eGreenBin',
     description:
       'A mobile app solving the problem of garbage sorting by helping to build and form habits and awareness for children from an early age.',
     logoUrl: eGreenBinLogo,
     coverUrl: eGreenBinProject,
-    techTags: ['Flutter', 'WebSocket', 'Arduino'],
+    techTags: ['Flutter', 'SocketIO', 'Arduino'],
   },
   {
     title: 'Cookhub',
+    source: 'https://github.com/cmwuaan',
     description:
       'The social app for food enthusiasts. Connect, discover, and share delicious recipes with a community that celebrates the joy of cooking!',
     logoUrl: CookhubLogo,
@@ -74,4 +86,15 @@ export const activitiesData = [
     organization: 'Google Developer Student Clubs - UIT',
   },
   { from: '08/2023', to: 'present', role: 'Chapter Lead', organization: 'Google Developer Student Clubs - UIT' },
+] as const;
+
+export const imageTechTags = [
+  { name: 'Arduino', imageUrl: Arduino },
+  { name: 'NextJS', imageUrl: NextJS },
+  { name: 'NodeJS', imageUrl: NodeJS },
+  { name: 'MongoDB', imageUrl: MongoDB },
+  { name: 'Flutter', imageUrl: Flutter },
+  { name: 'SocketIO', imageUrl: SocketIO },
+  { name: 'Firebase', imageUrl: Firebase },
+  { name: 'Golang', imageUrl: Golang },
 ] as const;

@@ -100,7 +100,7 @@ export default function Header() {
   return (
     <>
       <AnimatePresence>
-        <header className="z-[10]">
+        <header className="z-[9999]">
           {isScrolling && widthDevice > lgSize ? <NavbarScroll /> : <NavbarFixed toggleMenu={toggleMenu} />}
 
           <AnimatePresence>
@@ -131,7 +131,7 @@ export default function Header() {
                         <div className="overflow-hidden" key={index}>
                           <motion.div
                             variants={mobileLinkVars}
-                            className=" font-medium text-5xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400 lowercase"
+                            className=" font-medium text-5xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400 lowercase hover:text-gray-300 px-6 cursor-pointer"
                           >
                             <Link onClick={() => toggleMenu()} href={link.hash}>
                               {'.' + link.name}
@@ -167,16 +167,20 @@ function NavbarFixed({ toggleMenu }: NavbarFixedProps) {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             key={link.hash}
-            className="px-2 text-white text-md"
+            className="px-2 text-white text-md hover:text-gray-300"
           >
             <Link href={link.hash}>{link.name}</Link>
           </motion.li>
         ))}
       </ul>
-      <button className="hidden lg:flex w-24 h-8 rounded-md bg-white border border-white border-opacity-20 bg-opacity-10 justify-center items-center text-sm gap-1">
+      <a
+        href="https://www.linkedin.com/in/cmwuaan/"
+        target="blank"
+        className=" cursor-pointer hidden lg:flex w-24 h-8 rounded-md bg-white border border-white border-opacity-20 bg-opacity-10 justify-center items-center text-sm gap-1"
+      >
         Hire me
         <MdOutlineArrowOutward />
-      </button>
+      </a>
       <div
         onClick={() => {
           toggleMenu();
@@ -206,13 +210,15 @@ function NavbarScroll() {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             key={link.hash}
-            className="px-2 text-white text-md"
+            className="px-2 text-white text-md hover:text-gray-300"
           >
             <Link href={link.hash}>{link.name}</Link>
           </motion.li>
         ))}
         <li className="text-white text-md px-[12px] py-1 bg-black rounded-full">
-          <Link href={'#hire'}>Hire me</Link>
+          <Link href="https://www.linkedin.com/in/cmwuaan" target="blank">
+            Hire me
+          </Link>
         </li>
       </ul>
     </motion.nav>
