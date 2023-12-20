@@ -154,7 +154,7 @@ export default function Header() {
 function NavbarFixed({ toggleMenu }: NavbarFixedProps) {
   return (
     <nav
-      className="md:px-24 px-4 flex justify-between items-center fixed bg-white w-full h-[4rem] rounded-non top-0
+      className="md:px-24 px-4 flex justify-between items-center fixed bg-white w-[90%] left-1/2 -translate-x-1/2 sm:w-full h-[3rem] sm:h-[4rem] top-6 rounded-full sm:rounded-none sm:top-0
         border border-white border-opacity-20 bg-opacity-10 shadow-lg shadow-white/[0.03] backdrop-blur-[0.5rem]"
     >
       <Link href={'/'} className="flex gap-2 items-center">
