@@ -28,7 +28,13 @@ export default function About() {
             </p>
           </div>
         </div>
-        <Image className="rounded-md lg:w-[32rem] md:w-[26rem]" src={AboutCover} alt="About cover"></Image>
+        <div className="overflow-hidden lg:w-[32rem] md:w-[26rem] rounded-md border border-white border-opacity-20">
+          <Image
+            className="object-cover hover:scale-105 transition duration-500 ease-in-out"
+            src={AboutCover}
+            alt="About cover"
+          ></Image>
+        </div>
         <div className="hidden relative lg:flex w-full h-[20rem] sm:h-[28rem] md:w-[12rem] md:h-[20rem] lg:w-[16rem] lg:h-[24rem] bg-white border border-white border-opacity-20 bg-opacity-10 shadow-lg shadow-white/[0.03] rounded-md">
           <div className="absolute p-4 text-xs">
             <p className="text-green-500">user: ~/aboutme $ echo </p>

@@ -12,7 +12,7 @@ interface imageTagProps {
 
 export default function Projects() {
   return (
-    <section id="project" className="lg:mt-44 mt-10 flex flex-col items-center snap-center">
+    <section id="project" className="lg:mt-44 mt-10 mx-10 flex flex-col items-center snap-center">
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400">
         Projects
       </h1>
@@ -23,19 +23,21 @@ export default function Projects() {
         {projectsData.map((project, index) => (
           <div
             key={index}
-            className="overflow-hidden w-[398px] h-[430px] mb-6 rounded-md bg-white border border-white border-opacity-20 bg-opacity-10"
+            className="overflow-hidden w-[398px] h-[430px] mb-6 rounded-md bg-white border border-white border-opacity-20 bg-opacity-10 hover:bg-opacity-[0.15] transition duration-500 ease-in-out"
           >
-            <Image
-              className="object-cover w-[398px] h-[56%] rounded-t-md transition duration-300 ease-in-out hover:scale-105"
-              src={project.coverUrl}
-              alt={project.title}
-            ></Image>
+            <Link href="/">
+              <Image
+                className="object-cover w-[398px] h-[56%] rounded-t-md transition duration-300 ease-in-out hover:scale-105"
+                src={project.coverUrl}
+                alt={project.title}
+              ></Image>
+            </Link>
             <div className="flex flex-row items-center p-4 gap-2">
               <Image className="w-[22px] h-[22px]" src={project.logoUrl} alt={project.title}></Image>
               <Link
                 href={project.source}
-                target="blank"
-                className="text-white font-semibold text-xl flex items-end w-[20px] "
+                target="_blank"
+                className="text-white font-semibold text-xl flex items-end w-[20px] transition duration-300 ease-in-out hover:text-gray-300"
               >
                 {project.title}
                 <div>
@@ -53,7 +55,7 @@ export default function Projects() {
                 return (
                   <div
                     key={index}
-                    className="w-[30px] h-[30px]  flex items-center justify-center rounded-full bg-transparent border-[1.5px] border-gray-400 "
+                    className="w-[30px] h-[30px] flex items-center justify-center rounded-full bg-transparent border-[1.5px] border-gray-400 "
                   >
                     {logoUrl && <Image src={logoUrl} alt={tag} title={logoName} className="w-[22px] h-[22px]"></Image>}
                   </div>
