@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { Toaster } from 'react-hot-toast';
+import ActiveSectionContextProvider from '@/context/active-section-context';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,10 +17,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html className="!scroll-smooth md:snap-y md:snap-mandatory" lang="en">
       <body className={`${inter.className} bg-black text-white`}>
-        <Header />
-        {children}
-        <Toaster position="top-right" />
-        <Footer />
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+          <Toaster position="top-right" />
+          <Footer />
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
