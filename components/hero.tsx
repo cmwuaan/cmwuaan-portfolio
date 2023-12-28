@@ -1,20 +1,27 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import HeroProfile from '@/public/images/CMQHome.png';
+import { motion } from 'framer-motion';
 import { jsPDF } from 'jspdf';
 // import CV from '../public/files/CV_Cao_Minh_Quan_Software_Engineer_Intern.pdf';
 
 // Import Icons
 import { FaArrowDown } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Hero() {
-  const fileName = 'CV_Cao_Minh_Quan_Software_Engineer_Intern';
-  const handleDownload = () => {
-    // let doc = new jsPDF();
-    // doc.save(CV);
-  };
+  // Lazy Loading
+  const { ref } = useSectionInView('Home', 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
-    <section className="flex flex-col items-center gap-6 md:flex-row sm:justify-around snap-end md:snap-center">
+    <section
+      ref={ref}
+      id="home"
+      className="flex flex-col items-center gap-6 md:flex-row sm:justify-around snap-end md:snap-center"
+    >
       <div className="flex flex-col items-center md:items-start text-center md:text-left sm:w-[20rem] lg:w-[26rem]">
         <h1 className="text-6xl sm:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400">
           Quan Cao&apos;s Portfolio
