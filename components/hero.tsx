@@ -30,9 +30,14 @@ export default function Hero() {
           I design and code beautiful simple things, and I love what I do.
         </p>
         <div className="flex gap-4 mt-4 sm:mt-10 w-full justify-center">
-          <button className="flex items-center justify-center w-32 h-8 bg-white rounded-md text-black font-medium p-1 text-sm transition duration-300 ease-in-out hover:bg-gray-200">
+          <a
+            href="https://drive.google.com/uc?id=1ZxaImTafK4AyYrxq8_TFTikSijCebI5y&export=download"
+            download
+            target="_blank"
+            className="flex items-center justify-center w-32 h-8 bg-white rounded-md text-black font-medium p-1 text-sm transition duration-300 ease-in-out hover:bg-gray-200"
+          >
             Download CV <FaArrowDown />
-          </button>
+          </a>
           <button className="flex items-center justify-center w-32 h-[2.2rem] bg-white border border-white border-opacity-20 bg-opacity-10 shadow-lg shadow-white/[0.03] rounded-md text-white font-medium p-1 text-sm transition duration-300 ease-in-out hover:bg-opacity-[0.15]">
             Explore more
           </button>
